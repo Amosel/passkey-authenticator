@@ -19,6 +19,6 @@ pub enum ContractError {
     #[error("Authenticator error: {0}")]
     AuthenticatorError(#[from] AuthenticatorError),
 
-    #[error("Spend limit error: {0}")]
+    #[error("Passkey error: {0}")]
     PasskeyError(#[from] PasskeyError),
 }
